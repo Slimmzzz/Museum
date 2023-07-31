@@ -1,0 +1,62 @@
+.hero {
+    background-color: #000;
+    color: #FFF;
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 60px;
+    }
+    .introduction-block {
+        width: 598px;
+        margin-top: 150px;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        z-index: 2;
+        .h1 {
+            margin: 0;
+            font-family: $forum;
+            font-weight: 400;
+            font-size: 80px;
+            line-height: 90px;
+            letter-spacing: 5px;
+            margin-bottom: 25px;
+        }
+        .introduce {
+            font-family: $roboto;
+            font-size: 28px;
+            font-weight: 100;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+        .button-main {
+            width: 360px;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #710707;
+            color: #FFF;
+            border-radius: 10px;
+            font-size: 22px;
+            font-weight: 100;
+            margin-top: 75px;
+            cursor: pointer;
+        }
+    }
+    .image-main {
+        width: 1000px;
+        height: 750px;
+        position: relative;
+        .overlay {
+            width: 1000px;
+            height: 750px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.0) 30.73%);
+        }
+    }
+}

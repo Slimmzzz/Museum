@@ -1,0 +1,41 @@
+@import '../../vars';
+
+.header {
+    min-width: 1440px;
+    background-color: #000;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .navigation {
+            & ul {
+                display: flex;
+            }
+            & li {
+                list-style: none;
+                &:not(:last-child) {
+                    margin-right: 55px;
+                }
+                a {
+                    text-decoration: none;
+                    color: rgba($color: #FFF, $alpha: 0.6);
+                    // color: #FFF;
+                    font-family: $roboto;
+                    font-weight: 100;
+                    &:hover {
+                        color: $font-hover;
+                        transition: all 0.5s;
+                    }
+                    &:active {
+                        color: $font-active;
+                        transition: all 0.1s;
+                    }
+                }
+            }
+        }
+    }
+}

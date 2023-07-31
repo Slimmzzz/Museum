@@ -1,0 +1,121 @@
+*, *::after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section {
+  min-width: 1440px;
+  width: 100%;
+  background-color: #000;
+}
+
+.header {
+  min-width: 1440px;
+  background-color: #000;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+.header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .navigation ul {
+  display: flex;
+}
+.header .container .navigation li {
+  list-style: none;
+}
+.header .container .navigation li:not(:last-child) {
+  margin-right: 55px;
+}
+.header .container .navigation li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+.header .container .navigation li a:hover {
+  color: #9D8665;
+  transition: all 0.5s;
+}
+.header .container .navigation li a:active {
+  color: #7E6C51;
+  transition: all 0.1s;
+}
+
+.hero {
+  background-color: #000;
+  color: #FFF;
+}
+.hero .container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 60px;
+}
+.hero .introduction-block {
+  width: 598px;
+  margin-top: 150px;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  z-index: 2;
+}
+.hero .introduction-block .h1 {
+  margin: 0;
+  font-family: "Forum", cursive;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+}
+.hero .introduction-block .introduce {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin: 0;
+}
+.hero .introduction-block .button-main {
+  width: 360px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #710707;
+  color: #FFF;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 100;
+  margin-top: 75px;
+  cursor: pointer;
+}
+.hero .image-main {
+  width: 1000px;
+  height: 750px;
+  position: relative;
+}
+.hero .image-main .overlay {
+  width: 1000px;
+  height: 750px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+}/*# sourceMappingURL=style.css.map */
