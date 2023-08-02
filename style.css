@@ -20,6 +20,22 @@ html, body {
   background-color: #000;
 }
 
+.heading, .h3 {
+  font-family: "Forum", serif;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+}
+
+.heading {
+  margin: 0;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+}
+
 .header {
   min-width: 1440px;
   background-color: #000;
@@ -75,17 +91,10 @@ html, body {
   left: 0;
   z-index: 2;
 }
-.hero .introduction-block .h1 {
-  margin: 0;
-  font-family: "Forum", cursive;
-  font-weight: 400;
-  font-size: 80px;
-  line-height: 90px;
-  letter-spacing: 5px;
+.hero .introduction-block .heading {
   margin-bottom: 25px;
 }
 .hero .introduction-block .introduce {
-  font-family: "Roboto", sans-serif;
   font-size: 28px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -105,6 +114,10 @@ html, body {
   margin-top: 75px;
   cursor: pointer;
 }
+.hero .introduction-block .button-main:hover {
+  background: #9D8665;
+  transition: all 0.4s;
+}
 .hero .image-main {
   width: 1000px;
   height: 750px;
@@ -118,4 +131,62 @@ html, body {
   left: 0;
   z-index: 1;
   background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+}
+
+.virtual-tour .container {
+  padding: 75px 0;
+}
+.virtual-tour .heading {
+  color: #9D8665;
+  position: relative;
+  margin-bottom: 103px;
+}
+.virtual-tour .heading::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: #710707;
+  top: 115px;
+  left: 0;
+}
+.virtual-tour .virtual-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 75px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.virtual-tour .virtual-block .virtual-block__item {
+  width: 440px;
+  height: 424px;
+}
+.virtual-tour .virtual-block .virtual-block__item a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+.virtual-tour .virtual-block .virtual-block__item .h3 {
+  font-size: 32px;
+  letter-spacing: 5px;
+  position: relative;
+  margin: 25px 0;
+  font-weight: 400;
+}
+.virtual-tour .virtual-block .virtual-block__item .h3::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 300px;
+  top: 45px;
+  left: 0;
+  background: #710707;
+}
+.virtual-tour .virtual-block .virtual-block__item .text {
+  margin: 0;
+  font-weight: 100;
+}
+.virtual-tour .virtual-block .virtual-block__item .text:last-child {
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */

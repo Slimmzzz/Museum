@@ -1,0 +1,59 @@
+.virtual-tour {
+    .container {
+        padding: 75px 0;
+    }
+    .heading {
+        color: #9D8665;
+        position: relative;
+        margin-bottom: 103px;
+        &::after {
+            position: absolute;
+            content: "";
+            height: 3px;
+            width: 100%;
+            background: #710707;
+            top: 115px;
+            left: 0;
+        }
+    }
+    .virtual-block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 75px;
+        column-gap: 60px;
+        .virtual-block__item {
+            width: 440px;
+            height: 424px;
+            & a {
+                display: block;
+                text-decoration: none;
+                color: #000;
+            }
+            .h3 {
+                font-size: 32px;
+                letter-spacing: 5px;
+                position: relative;
+                margin: 25px 0;
+                font-weight: 400;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 3px;
+                    width: 300px;
+                    top: 45px;
+                    left: 0;
+                    background: #710707;
+                }
+            }
+            .text {
+                margin: 0;
+                font-weight: 100;
+                &:last-child {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    
+}

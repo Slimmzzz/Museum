@@ -19,3 +19,19 @@ html, body {
     width: 100%;
     background-color: #000;
 }
+
+.heading, .h3 {
+    font-family: $forum;
+}
+
+.text {
+    font-family: $roboto;
+}
+
+.heading {
+    margin: 0;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+}

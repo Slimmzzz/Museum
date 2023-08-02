@@ -14,17 +14,10 @@
         top: 150px;
         left: 0;
         z-index: 2;
-        .h1 {
-            margin: 0;
-            font-family: $forum;
-            font-weight: 400;
-            font-size: 80px;
-            line-height: 90px;
-            letter-spacing: 5px;
+        .heading {
             margin-bottom: 25px;
         }
         .introduce {
-            font-family: $roboto;
             font-size: 28px;
             font-weight: 100;
             letter-spacing: 2px;
@@ -43,6 +36,10 @@
             font-weight: 100;
             margin-top: 75px;
             cursor: pointer;
+            &:hover {
+                background: #9D8665;
+                transition: all 0.4s;
+            }
         }
     }
     .image-main {
