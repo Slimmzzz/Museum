@@ -1,0 +1,18 @@
+.author {
+    background: #000;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 100;
+    font-size: 26px;
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        .bio > a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.4);
+            &:hover {
+                color: $font-hover;
+                transition: all 0.3s;
+            }
+        }
+    }
+}

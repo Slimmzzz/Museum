@@ -1,0 +1,33 @@
+.picture-explore {
+    background: #000;
+    color: #FFF;
+    .container {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+    }
+    .information-block {
+        width: 660px;
+        .text {
+            font-weight: 300;
+            line-height: 175%;
+            margin: 25px 0;
+        }
+        .attention {
+            color: #CAAA7D;
+        }
+    }
+    .heading {
+        position: relative;
+        margin-bottom: 103px;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 115px;
+            left: 0;
+            height: 3px;
+            background: #710707;
+            width: 100%;
+        }
+    }
+}

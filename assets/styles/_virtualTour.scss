@@ -1,7 +1,4 @@
 .virtual-tour {
-    .container {
-        padding: 75px 0;
-    }
     .heading {
         color: #9D8665;
         position: relative;
@@ -26,7 +23,8 @@
             width: 440px;
             height: 424px;
             & a {
-                display: block;
+                display: flex;
+                flex-direction: column;
                 text-decoration: none;
                 color: #000;
             }
@@ -34,7 +32,7 @@
                 font-size: 32px;
                 letter-spacing: 5px;
                 position: relative;
-                margin: 25px 0;
+                margin: 25px 0 22px;
                 font-weight: 400;
                 &::after {
                     content: "";
@@ -52,6 +50,9 @@
                 &:last-child {
                     margin-top: 10px;
                 }
+            }
+            .panoram-text {
+                font-size: 18px;
             }
         }
     }
