@@ -321,4 +321,75 @@ html, body {
 .author .container .bio > a:hover {
   color: #9D8665;
   transition: all 0.3s;
+}
+
+.video-journey .up-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 75px;
+}
+.video-journey .up-block .heading {
+  color: #9D8665;
+}
+.video-journey .up-block .video-description {
+  width: 720px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 175%;
+  margin: 0;
+}
+.video-journey .down-block .main-video {
+  margin-bottom: 40px;
+  position: relative;
+}
+.video-journey .down-block .main-video video {
+  width: 100%;
+}
+.video-journey .down-block .main-video .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-journey .down-block .main-video .play-button:hover {
+  cursor: pointer;
+}
+.video-journey .down-block .additional-video {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.video-journey .down-block .additional-video .video-item {
+  position: relative;
+}
+.video-journey .down-block .additional-video .video-item video {
+  width: 452px;
+  height: 254px;
+}
+.video-journey .down-block .additional-video .description {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  display: flex;
+}
+.video-journey .down-block .additional-video .description .description__text {
+  font-size: 18px;
+  margin: 0;
+  margin-top: 7px;
+  margin-left: 10px;
+  color: #FFF;
+}
+.video-journey .down-block .additional-video .description .description__icon {
+  width: 40px;
+  height: 40px;
+}
+.video-journey .down-block .additional-video .start-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-journey .down-block .additional-video .start-btn:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

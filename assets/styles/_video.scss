@@ -1,0 +1,73 @@
+.video-journey {
+    .up-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 75px;
+        .heading {
+            color: $font-hover;
+        }
+        .video-description {
+            width: 720px;
+            font-family: $roboto;
+            font-weight: 300;
+            line-height: 175%;
+            margin: 0;
+        }
+    }
+    .down-block {
+        .main-video {
+            margin-bottom: 40px;
+            position: relative;
+            & video {
+                width: 100%;
+            }
+            .play-button {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .additional-video {
+            display: flex;
+            column-gap: 40px;
+            .video-item {
+                position: relative;
+            }
+            .video-item video {
+                width: 452px;
+                height: 254px;
+            }
+            .description {
+                position: absolute;
+                top: 20px;
+                left: 10px;
+                display: flex;
+                .description__text {
+                    font-size: 18px;
+                    margin: 0;
+                    margin-top: 7px;
+                    margin-left: 10px;
+                    color: #FFF;
+                }
+                .description__icon {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .start-btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
