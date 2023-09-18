@@ -470,6 +470,9 @@ html, body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
+.buy-tickets .tickets-wrapper .type-item input[type=radio] {
+  accent-color: #000;
+}
 .buy-tickets .tickets-wrapper .amount-name {
   margin: 0;
   margin-bottom: 15px;
@@ -510,6 +513,9 @@ html, body {
   letter-spacing: 2px;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
+}
+.buy-tickets .tickets-wrapper .buy-tickets:active {
+  transform: scale(1.03);
 }
 
 .parallax-image {
