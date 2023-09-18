@@ -392,4 +392,41 @@ html, body {
 }
 .video-journey .down-block .additional-video .start-btn:hover {
   cursor: pointer;
+}
+
+.art-gallery {
+  background: #000;
+  color: #FFF;
+}
+.art-gallery .container {
+  padding-bottom: 0;
+}
+.art-gallery .gallery-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.art-gallery .first-column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 125px;
+}
+.art-gallery .second-column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+}
+.art-gallery .third-column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 125px;
+}
+.art-gallery .gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 360px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
 }/*# sourceMappingURL=style.css.map */
