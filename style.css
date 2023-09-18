@@ -519,4 +519,40 @@ html, body {
 .parallax-image img {
   max-width: 1920px;
   width: 100%;
+}
+
+.contacts .heading {
+  position: relative;
+  color: #9D8665;
+  margin-bottom: 103px;
+}
+.contacts .heading::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: #710707;
+  top: 115px;
+  left: 0;
+}
+.contacts .contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts .contact-wrapper .contacts-info {
+  width: 282px;
+  height: 244px;
+  font-family: "Roboto", sans-serif;
+}
+.contacts .contact-wrapper .contacts-info .h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.contacts .contact-wrapper .contacts-info .contacts-item {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 300;
 }/*# sourceMappingURL=style.css.map */

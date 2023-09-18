@@ -1,0 +1,37 @@
+.contacts {
+    .heading {
+        position: relative;
+        color: $font-hover;
+        margin-bottom: 103px;
+        &::after {
+            position: absolute;
+            content: "";
+            height: 3px;
+            width: 100%;
+            background: #710707;
+            top: 115px;
+            left: 0;
+        }
+    }
+    .contact-wrapper {
+        display: flex;
+        justify-content: space-between;
+        .contacts-info {
+            width: 282px;
+            height: 244px;
+            font-family: $roboto;
+            & .h3 {
+                font-family: $roboto;
+                font-size: 28px;
+                font-weight: 600;
+                margin: 0;
+                margin-bottom: 50px;
+            }
+            .contacts-item {
+                margin: 0;
+                margin-bottom: 25px;
+                font-weight: 300;
+            }
+        }
+    }
+}
