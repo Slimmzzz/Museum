@@ -220,10 +220,59 @@
             </div>
         </section>
 
-        <section class="buy-tickets"></section>
+        <section class="buy-tickets">
+            <div class="container">
+                <h2 class="heading">BUY TICKETS</h2>
+                <div class="tickets-wrapper">
+                    <img src="./assets/images/tickets-intro.jpg" alt="Buy tickets section image">
+                    <div class="ticket-type">
+                        <h4 class="h4 head-type">Ticket type</h4>
+                        <div class="type-item">
+                            <input checked type="radio" name="ticketType" id="ticketType1" value="permanent">
+                            <label class="type-text" for="ticketType1">Permanent exhibition</label>
+                        </div>
 
-        <!--TODO PARALLAX IMAGE -->
-        <div class="parallax-image"></div>
+                        <div class="type-item">
+                            <input type="radio" name="ticketType" id="ticketType2" value="temporary">
+                            <label class="type-text" for="ticketType2">Temporary exhibition</label>
+                        </div>
+
+                        <div class="type-item">
+                            <input type="radio" name="ticketType" id="ticketType3" value="combined">
+                            <label class="type-text" for="ticketType3">Combined exhibition</label>
+                        </div>
+                    </div>
+                    <div class="ticket-amount">
+                        <h4 class="h4 head-amount">Amount</h4>
+
+                        <p class="amount-name">Basic 18+</p>
+                        <div class="value-box">
+                            <span id="basicMinus">-</span>
+                            <span id="basicValue">0</span>
+                            <span id="basicPlus">+</span>
+                        </div>
+
+                        <p class="amount-name second-amount">Senior 65+</p>
+                        <div class="value-box">
+                            <span id="seniorMinus">-</span>
+                            <span id="seniorValue">0</span>
+                            <span id="seniorPlus">+</span>
+                        </div>
+
+                        <div class="total-price">
+                            <span>Total &euro;</span>
+                            <span id="priceTotal">0</span>
+                        </div>
+
+                        <button class="buy-tickets">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="parallax-image">
+            <img src="./assets/images/parallax.jpg" alt="parallax image">
+        </div>
 
         <section class="contacts"></section>
     </main>

@@ -429,4 +429,94 @@ html, body {
   width: 100%;
   height: 360px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+}
+
+.buy-tickets .heading {
+  position: relative;
+  color: #9D8665;
+  margin-bottom: 103px;
+}
+.buy-tickets .heading::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background: #710707;
+  top: 115px;
+  left: 0;
+}
+.buy-tickets .tickets-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+}
+.buy-tickets .tickets-wrapper .h4 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.buy-tickets .tickets-wrapper .head-type {
+  margin-bottom: 50px;
+}
+.buy-tickets .tickets-wrapper .head-amount {
+  margin-bottom: 25px;
+  text-align: end;
+}
+.buy-tickets .tickets-wrapper .type-item {
+  margin-bottom: 25px;
+}
+.buy-tickets .tickets-wrapper .type-item .type-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.buy-tickets .tickets-wrapper .amount-name {
+  margin: 0;
+  margin-bottom: 15px;
+}
+.buy-tickets .tickets-wrapper .amount-name.second-amount {
+  margin-top: 10px;
+}
+.buy-tickets .tickets-wrapper .value-box {
+  width: 150px;
+  height: 50px;
+  border: 4px solid #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.buy-tickets .tickets-wrapper .value-box #basicMinus, .buy-tickets .tickets-wrapper .value-box #basicPlus, .buy-tickets .tickets-wrapper .value-box #seniorMinus, .buy-tickets .tickets-wrapper .value-box #seniorPlus {
+  font-size: 32px;
+  cursor: pointer;
+  padding: 0 30px;
+}
+.buy-tickets .tickets-wrapper .total-price {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  text-align: end;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1.65px;
+}
+.buy-tickets .tickets-wrapper .buy-tickets {
+  width: 175px;
+  height: 50px;
+  border: 2px solid #000;
+  border-radius: 2px;
+  background: #000;
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.parallax-image {
+  display: flex;
+  justify-content: center;
+}
+.parallax-image img {
+  max-width: 1920px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
