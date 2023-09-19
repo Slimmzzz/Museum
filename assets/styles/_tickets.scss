@@ -12,11 +12,29 @@
             top: 115px;
             left: 0;
         }
+        @media screen and (max-width: 1023px) {
+            margin-bottom: 63px;
+            &::after {
+                top: 85px;
+            }
+        }
     }
     .tickets-wrapper {
         display: flex;
         justify-content: space-between;
         font-family: $roboto;
+        @media screen and (max-width: 1500px) {
+            & img {
+                width: 700px;
+                height: 440px;
+            }
+        }
+        @media screen and (max-width: 1023px) {
+            & img {
+                width: 444px;
+                height: 340px;
+            }
+        }
         .h4 {
             margin: 0;
             font-size: 28px;
@@ -31,6 +49,9 @@
         .head-amount {
             margin-bottom: 25px;
             text-align: end;
+            @media screen and (max-width: 1500px) {
+                text-align: left;
+            }
         }
 
         .type-item {
@@ -63,6 +84,9 @@
                 font-size: 32px;
                 cursor: pointer;
                 padding: 0 30px;
+            }
+            @media screen and (max-width: 1500px) {
+                width: 175px;
             }
         }
 
@@ -99,5 +123,11 @@
     & img {
         max-width: 1920px;
         width: 100%;
+        height: 400px;
+    }
+    @media screen and (max-width: 1023px) {
+        & img {
+            height: 300px;
+        }
     }
 }

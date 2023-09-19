@@ -5,13 +5,22 @@
         display: flex;
         position: relative;
         justify-content: space-between;
+        @media screen and (max-width: 1500px) {
+            display: block;
+        }
     }
     .information-block {
         width: 660px;
+        @media screen and (max-width:1500px) {
+            width: unset;
+        }
         .text {
             font-weight: 300;
             line-height: 175%;
             margin: 25px 0;
+            @media screen and (max-width: 1023px) {
+                display: none;
+            }
         }
         .attention {
             color: #CAAA7D;
@@ -28,6 +37,21 @@
             height: 3px;
             background: #710707;
             width: 100%;
+        }
+        @media screen and (max-width: 1500px) {
+            margin-bottom: 83px;
+        }
+        @media screen and (max-width: 1023px) {
+            margin-bottom: 60px;
+            &::after {
+                top: 85px;
+            }
+        }
+    }
+    @media screen and (max-width: 1500px) {
+        .image-block {
+            display: flex;
+            justify-content: center;
         }
     }
 }

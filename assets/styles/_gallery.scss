@@ -13,16 +13,47 @@
         display: flex;
         flex-direction: column;
         margin-top: 125px;
+        @media screen and (max-width: 1500px) {
+            gap: 24px;
+            & img {
+                width: 304px;
+            }
+        }
+        @media screen and (max-width: 1023px) {
+            & img {
+                width: 352px;
+            }
+        }
     }
     .second-column {
         display: flex;
         flex-direction: column;
         margin-top: 75px;
+        @media screen and (max-width: 1500px) {
+            gap: 24px;
+            & img {
+                width: 304px;
+            }
+        }
+        @media screen and (max-width: 1023px) {
+            & img {
+                width: 352px;
+            }
+        }
     }
     .third-column {
         display: flex;
         flex-direction: column;
         margin-top: 125px;
+        @media screen and (max-width: 1500px) {
+            gap: 24px;
+            & img {
+                width: 304px;
+            }
+        }
+        @media screen and (max-width: 1023px) {
+            display: none;
+        }
     }
     .gallery-overlay {
         position: absolute;

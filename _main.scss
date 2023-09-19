@@ -13,6 +13,13 @@ html, body {
     width: 100%;
     margin: 0 auto;
     padding: 75px 0;
+    @media screen and (max-width: 1500px) {
+        max-width: 984px;
+    }
+    @media screen and (max-width: 1023px) {
+        max-width: 728px;
+        padding: 40px 0;
+    }
 }
 
 .section {
@@ -35,4 +42,48 @@ html, body {
     font-size: 80px;
     line-height: 90px;
     letter-spacing: 5px;
+    @media screen and (max-width: 1500px) {
+        font-size: 50px;
+    }
+    @media screen and (max-width: 1023px) {
+        font-size: 40px;
+    }
+}
+
+.social-medias {
+    display: flex;
+    align-items: flex-end;
+    & > .social-item {
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid $font-hover;
+            transition: all 0.3s;
+        }
+        & > a {
+            height: 23px;
+        }
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+}
+
+.show-block {
+    display: none;
+}
+
+@media screen and (max-width: 1500px) {
+    .hide-block {
+        display: none;
+    }
+    .show-block {
+        display: block;
+    }
 }
