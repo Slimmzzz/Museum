@@ -20,6 +20,9 @@ html, body {
         max-width: 728px;
         padding: 40px 0;
     }
+    @media screen and (max-width: 767px) {
+        max-width: 380px;
+    }
 }
 
 .section {
@@ -47,6 +50,11 @@ html, body {
     }
     @media screen and (max-width: 1023px) {
         font-size: 40px;
+    }
+    @media screen and (max-width: 767px) {
+        font-size: 28px;
+        line-height: 40px;
+        margin-top: 5px;
     }
 }
 
@@ -76,6 +84,10 @@ html, body {
 }
 
 .show-block {
+    display: none;
+}
+
+.little-map {
     display: none;
 }
 

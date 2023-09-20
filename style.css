@@ -25,6 +25,11 @@ html, body {
     padding: 40px 0;
   }
 }
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 380px;
+  }
+}
 
 .section {
   min-width: 1440px;
@@ -57,6 +62,13 @@ html, body {
     font-size: 40px;
   }
 }
+@media screen and (max-width: 767px) {
+  .heading {
+    font-size: 28px;
+    line-height: 40px;
+    margin-top: 5px;
+  }
+}
 
 .social-medias {
   display: flex;
@@ -87,6 +99,10 @@ html, body {
   display: none;
 }
 
+.little-map {
+  display: none;
+}
+
 @media screen and (max-width: 1500px) {
   .hide-block {
     display: none;
@@ -114,6 +130,11 @@ html, body {
     height: 110px;
   }
 }
+@media screen and (max-width: 767px) {
+  .header {
+    height: 90px;
+  }
+}
 .header .container {
   display: flex;
   flex-direction: row;
@@ -129,6 +150,11 @@ html, body {
 @media screen and (max-width: 1023px) {
   .header .container {
     justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header .container {
+    padding: 0 30px;
   }
 }
 .header .container .navigation ul {
@@ -167,6 +193,7 @@ html, body {
   height: 597px;
   background: #000;
   z-index: 4;
+  transform: translateX(-728px);
   transition: all 0.5s;
 }
 .header .container .burger-navigation > ul {
@@ -358,6 +385,11 @@ html, body {
     font-size: 24px;
   }
 }
+@media screen and (max-width: 767px) {
+  .hero .introduction-block .introduce {
+    font-size: 16px;
+  }
+}
 .hero .introduction-block .button-main {
   width: 360px;
   height: 75px;
@@ -388,16 +420,22 @@ html, body {
 }
 .hero .image-main {
   width: 1000px;
-  height: 750px;
   position: relative;
 }
 @media screen and (max-width: 1500px) {
   .hero .image-main {
     width: 700px;
-    height: 525px;
   }
   .hero .image-main img {
     width: 700px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero .image-main {
+    width: 380px;
+  }
+  .hero .image-main img {
+    width: 380px;
   }
 }
 .hero .image-main .overlay {
@@ -448,6 +486,11 @@ html, body {
     top: 85px;
   }
 }
+@media screen and (max-width: 767px) {
+  .virtual-tour .heading::after {
+    top: 55px;
+  }
+}
 .virtual-tour .virtual-block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -460,6 +503,13 @@ html, body {
   .virtual-tour .virtual-block {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .virtual-tour .virtual-block {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 40px;
   }
 }
 .virtual-tour .virtual-block .virtual-block__item {
@@ -478,6 +528,17 @@ html, body {
 @media screen and (max-width: 1023px) {
   .virtual-tour .virtual-block .virtual-block__item {
     width: 280px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .virtual-tour .virtual-block .virtual-block__item {
+    height: 295px;
+  }
+  .virtual-tour .virtual-block .virtual-block__item:nth-child(2n+1) {
+    margin: 0 50px;
+  }
+  .virtual-tour .virtual-block .virtual-block__item:nth-child(2n+2) {
+    margin: 0 50px;
   }
 }
 .virtual-tour .virtual-block .virtual-block__item a {
@@ -519,12 +580,26 @@ html, body {
     letter-spacing: 3px;
   }
 }
+@media screen and (max-width: 767px) {
+  .virtual-tour .virtual-block .virtual-block__item .h3 {
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+  .virtual-tour .virtual-block .virtual-block__item .h3::after {
+    top: 30px;
+  }
+}
 .virtual-tour .virtual-block .virtual-block__item .text {
   margin: 0;
   font-weight: 100;
 }
 .virtual-tour .virtual-block .virtual-block__item .text:last-child {
   margin-top: 10px;
+}
+@media screen and (max-width: 767px) {
+  .virtual-tour .virtual-block .virtual-block__item .text {
+    font-size: 16px;
+  }
 }
 .virtual-tour .virtual-block .virtual-block__item .panoram-text {
   font-size: 18px;
@@ -591,10 +666,20 @@ html, body {
     top: 85px;
   }
 }
+@media screen and (max-width: 767px) {
+  .picture-explore .heading::after {
+    top: 55px;
+  }
+}
 @media screen and (max-width: 1500px) {
   .picture-explore .image-block {
     display: flex;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .picture-explore .image-block img {
+    width: 380px;
   }
 }
 
@@ -615,6 +700,12 @@ html, body {
   display: flex;
   padding: 75px 0 50px;
 }
+@media screen and (max-width: 767px) {
+  .footer .container {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+}
 .footer .links {
   display: flex;
   justify-content: space-between;
@@ -629,6 +720,17 @@ html, body {
 @media screen and (max-width: 1023px) {
   .footer .links {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer .links {
+    margin-left: 0;
+  }
+  .footer .links .social-medias {
+    justify-content: center;
+  }
+  .footer .links .social-medias > .social-item:not(:last-child) {
+    margin-right: 5px;
   }
 }
 .footer .list-block {
@@ -649,6 +751,18 @@ html, body {
     margin-bottom: 42px;
   }
 }
+@media screen and (max-width: 767px) {
+  .footer .list-block {
+    width: unset;
+    font-size: 16px;
+    margin: 40px 0;
+    margin-right: 0;
+    height: 68px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    align-items: center;
+  }
+}
 .footer .list-item {
   list-style: none;
 }
@@ -665,12 +779,25 @@ html, body {
   color: #9D8665;
   transition: all 0.3s;
 }
+@media screen and (max-width: 767px) {
+  .footer .list-item:nth-child(2), .footer .list-item:nth-child(5) {
+    margin: 0;
+  }
+  .footer .list-item:nth-child(2n+1) {
+    margin-bottom: 30px;
+  }
+}
 
 .author {
   background: #000;
   color: rgba(255, 255, 255, 0.4);
   font-weight: 100;
   font-size: 26px;
+}
+@media screen and (max-width: 767px) {
+  .author {
+    font-size: 16px;
+  }
 }
 .author .container {
   display: flex;
@@ -683,6 +810,11 @@ html, body {
 .author .container .bio > a:hover {
   color: #9D8665;
   transition: all 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .author .container {
+    justify-content: space-between;
+  }
 }
 
 .video-journey .up-block {
@@ -727,6 +859,11 @@ html, body {
 .video-journey .down-block .main-video .play-button:hover {
   cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+  .video-journey .down-block .main-video .play-button img {
+    width: 50px;
+  }
+}
 .video-journey .down-block .additional-video {
   display: flex;
   -moz-column-gap: 40px;
@@ -762,11 +899,21 @@ html, body {
     height: 199px;
   }
 }
+@media screen and (max-width: 767px) {
+  .video-journey .down-block .additional-video .video-item video {
+    width: 180px;
+  }
+}
 .video-journey .down-block .additional-video .description {
   position: absolute;
   top: 20px;
   left: 10px;
   display: flex;
+}
+@media screen and (max-width: 767px) {
+  .video-journey .down-block .additional-video .description {
+    top: 56px;
+  }
 }
 .video-journey .down-block .additional-video .description .description__text {
   font-size: 18px;
@@ -787,6 +934,11 @@ html, body {
 }
 .video-journey .down-block .additional-video .start-btn:hover {
   cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .video-journey .down-block .additional-video .start-btn img {
+    width: 68px;
+  }
 }
 
 .art-gallery {
@@ -819,6 +971,11 @@ html, body {
     width: 352px;
   }
 }
+@media screen and (max-width: 767px) {
+  .art-gallery .first-column img {
+    width: 178px;
+  }
+}
 .art-gallery .second-column {
   display: flex;
   flex-direction: column;
@@ -835,6 +992,11 @@ html, body {
 @media screen and (max-width: 1023px) {
   .art-gallery .second-column img {
     width: 352px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .art-gallery .second-column img {
+    width: 178px;
   }
 }
 .art-gallery .third-column {
@@ -887,6 +1049,11 @@ html, body {
     top: 85px;
   }
 }
+@media screen and (max-width: 767px) {
+  .buy-tickets .heading::after {
+    top: 55px;
+  }
+}
 .buy-tickets .tickets-wrapper {
   display: flex;
   justify-content: space-between;
@@ -902,6 +1069,24 @@ html, body {
   .buy-tickets .tickets-wrapper img {
     width: 444px;
     height: 340px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .buy-tickets .tickets-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .buy-tickets .tickets-wrapper .tickets-image {
+    position: relative;
+    width: 380px;
+    height: 160px;
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+  .buy-tickets .tickets-wrapper .tickets-image img {
+    position: absolute;
+    top: -80px;
+    left: -50px;
   }
 }
 .buy-tickets .tickets-wrapper .h4 {
@@ -920,6 +1105,11 @@ html, body {
 @media screen and (max-width: 1500px) {
   .buy-tickets .tickets-wrapper .head-amount {
     text-align: left;
+  }
+}
+@media screen and (max-width: 767px) {
+  .buy-tickets .tickets-wrapper .head-amount {
+    text-align: center;
   }
 }
 .buy-tickets .tickets-wrapper .type-item {
@@ -965,6 +1155,12 @@ html, body {
   font-weight: 700;
   letter-spacing: 1.65px;
 }
+@media screen and (max-width: 767px) {
+  .buy-tickets .tickets-wrapper .total-price {
+    display: flex;
+    justify-content: center;
+  }
+}
 .buy-tickets .tickets-wrapper .buy-tickets {
   width: 175px;
   height: 50px;
@@ -996,6 +1192,15 @@ html, body {
     height: 300px;
   }
 }
+@media screen and (max-width: 767px) {
+  .parallax-image {
+    max-width: unset;
+    overflow: hidden;
+  }
+  .parallax-image img {
+    width: unset;
+  }
+}
 
 .contacts .heading {
   position: relative;
@@ -1019,6 +1224,11 @@ html, body {
     top: 85px;
   }
 }
+@media screen and (max-width: 767px) {
+  .contacts .heading::after {
+    top: 55px;
+  }
+}
 .contacts .contact-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1026,6 +1236,14 @@ html, body {
 @media screen and (max-width: 1023px) {
   .contacts .contact-wrapper {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts .contact-wrapper .show-block {
+    display: none;
+  }
+  .contacts .contact-wrapper .little-map {
+    display: block;
   }
 }
 .contacts .contact-wrapper .contacts-info {
@@ -1046,6 +1264,14 @@ html, body {
     margin-bottom: 35px;
   }
 }
+@media screen and (max-width: 767px) {
+  .contacts .contact-wrapper .contacts-info {
+    height: unset;
+  }
+  .contacts .contact-wrapper .contacts-info .h3 {
+    font-size: 16px;
+  }
+}
 .contacts .contact-wrapper .contacts-info .contacts-item {
   margin: 0;
   margin-bottom: 25px;
@@ -1055,5 +1281,10 @@ html, body {
   .contacts .contact-wrapper .contacts-info .contacts-item {
     font-size: 20px;
     margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts .contact-wrapper .contacts-info .contacts-item {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

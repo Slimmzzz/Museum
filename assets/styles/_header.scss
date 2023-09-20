@@ -14,6 +14,9 @@
         justify-content: space-between;
         height: 110px;
     }
+    @media screen and (max-width: 767px) {
+        height: 90px;
+    }
 
     .container {
         display: flex;
@@ -26,6 +29,9 @@
         }
         @media screen and (max-width: 1023px) {
             justify-content: space-between;
+        }
+        @media screen and (max-width: 767px) {
+            padding: 0 30px;
         }
         .navigation {
             & ul {
@@ -64,7 +70,7 @@
             height: 597px;
             background: #000;
             z-index: 4;
-            // transform: translateX(-728px);
+            transform: translateX(-728px);
             transition: all 0.5s;
             & > ul {
                 padding: 0;

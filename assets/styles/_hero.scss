@@ -41,6 +41,9 @@
             @media screen and (max-width: 1500px) {
                 font-size: 24px;
             }
+            @media screen and (max-width: 767px) {
+                font-size: 16px;
+            }
         }
         .button-main {
             width: 360px;
@@ -69,13 +72,19 @@
     }
     .image-main {
         width: 1000px;
-        height: 750px;
+        // height: 750px;
         position: relative;
         @media screen and (max-width: 1500px) {
             width: 700px;
-            height: 525px;
+            // height: 525px;
             & img {
                 width: 700px;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            width: 380px;
+            & img {
+                width: 380px;
             }
         }
         .overlay {

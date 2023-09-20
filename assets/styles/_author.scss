@@ -3,6 +3,9 @@
     color: rgba(255, 255, 255, 0.4);
     font-weight: 100;
     font-size: 26px;
+    @media screen and (max-width: 767px) {
+        font-size: 16px;
+    }
     .container {
         display: flex;
         justify-content: space-evenly;
@@ -13,6 +16,9 @@
                 color: $font-hover;
                 transition: all 0.3s;
             }
+        }
+        @media screen and (max-width: 767px) {
+            justify-content: space-between;
         }
     }
 }

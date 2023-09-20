@@ -47,11 +47,21 @@
                 top: 85px;
             }
         }
+        @media screen and (max-width: 767px) {
+            &::after {
+                top: 55px;
+            }
+        }
     }
     @media screen and (max-width: 1500px) {
         .image-block {
             display: flex;
             justify-content: center;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .image-block img {
+            width: 380px;
         }
     }
 }

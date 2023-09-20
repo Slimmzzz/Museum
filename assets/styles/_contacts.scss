@@ -18,12 +18,25 @@
                 top: 85px;
             }
         }
+        @media screen and (max-width: 767px) {
+            &::after {
+                top: 55px;
+            }
+        }
     }
     .contact-wrapper {
         display: flex;
         justify-content: space-between;
         @media screen and (max-width: 1023px) {
             flex-direction: column;
+        }
+        @media screen and (max-width: 767px) {
+            .show-block {
+                display: none;
+            }
+            .little-map {
+                display: block;
+            }
         }
         .contacts-info {
             width: 282px;
@@ -40,6 +53,12 @@
                     margin-bottom: 35px;
                 }
             }
+            @media screen and (max-width: 767px) {
+                height: unset;
+                & .h3 {
+                    font-size: 16px;
+                }
+            }
             .contacts-item {
                 margin: 0;
                 margin-bottom: 25px;
@@ -47,6 +66,9 @@
                 @media screen and (max-width: 1500px) {
                     font-size: 20px;
                     margin-bottom: 15px;
+                }
+                @media screen and (max-width: 767px) {
+                    font-size: 16px;
                 }
             }
         }

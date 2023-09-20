@@ -36,6 +36,11 @@
                 &:hover {
                     cursor: pointer;
                 }
+                @media screen and (max-width: 767px) {
+                    & img {
+                        width: 50px;
+                    }
+                }
             }
         }
         .additional-video {
@@ -63,12 +68,18 @@
                     width: 354px;
                     height: 199px;
                 }
+                @media screen and (max-width: 767px) {
+                    width: 180px;
+                }
             }
             .description {
                 position: absolute;
                 top: 20px;
                 left: 10px;
                 display: flex;
+                @media screen and (max-width: 767px) {
+                    top: 56px;
+                }
                 .description__text {
                     font-size: 18px;
                     margin: 0;
@@ -88,6 +99,11 @@
                 transform: translate(-50%, -50%);
                 &:hover {
                     cursor: pointer;
+                }
+                @media screen and (max-width: 767px) {
+                    & img {
+                        width: 68px;
+                    }
                 }
             }
         }
